@@ -2,6 +2,7 @@ from PIL import Image, ImageEnhance, ImageFilter
 import os
 path = '/Users/philipsenn/Desktop/TEST/imgs'
 pathOut = '/Users/philipsenn/Desktop/TEST/editedImgs'
+##pathOut = '/Users/philipsenn/Downloads/TEST/editedImgs'
 for i in os.listdir(path):
    img = Image.open(f"{path}/filename")
    edit = img.filter(ImageFilter.SHARPEN). convert('L').rotate(-90)
